@@ -33,6 +33,10 @@ body
 section
 {
   margin-bottom: $spacing-vertical;
+  section {
+    /* Smaller padding around inner sections */
+    margin-bottom: $spacing-vertical / 4;
+  }
   &:last-child
   {
     margin-bottom: 0;
@@ -50,7 +54,7 @@ sup, sub {
 }
 sup { top: -0.4em; }
 sub { top: 0.4em; }
-label { cursor: pointer; }
+label { cursor: default; }
 
 header
 {
@@ -62,6 +66,9 @@ p
   margin-bottom: 0.8em;
 }
 
+textarea {
+  height: 190px;
+}
 
 .hidden {
   display: none;
